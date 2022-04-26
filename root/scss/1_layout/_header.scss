@@ -1,0 +1,95 @@
+/*------------------------------------------------------------
+	Header
+------------------------------------------------------------*/
+.c-header {
+	width: 100%;
+	transition: 0.3s ease-in-out;
+	padding: 10px 0;
+	font-weight: 400;
+	position: relative;
+	@include sp{
+		padding: 10px 0;
+	}
+	.l-container, .nav-menu{
+		@include flex-jbetween;
+		align-items: flex-end;
+	}
+	.nav-menu{
+		transition: 0.3s ease-in-out;
+		&_item{
+			font-size: 18px;
+			line-height: 1.2;
+			padding: 9px 13px;
+			a{
+				text-decoration: none;
+				color: #01395e;
+			}
+			&.is_active{
+				a{
+					color: #ee680f;
+				}
+			}
+			
+			&:hover{
+				a{
+					color: #ee680f;
+				}
+			}
+			&__phone{
+				a{
+					color: #ee680f;
+					font-weight: 700;
+					&::before{
+						content: 'Licensed in all 50 States';
+						display: block;
+						font-size: 60%;
+						font-weight: normal;
+						color: #333;
+					}
+				}
+			}
+			@include sp{
+				padding: 8px 0;
+			}
+		}
+		@include sp{
+			display: none;
+		}
+		&.js-active{
+			@include sp{
+				display: flex;
+				flex-direction: column;
+				align-items: start;
+				position: absolute;
+				left: 0;
+				z-index: 99;
+				background-color: $color-main;
+				width: 100vw;
+				height: 100vh;
+				top: 73px;
+				justify-content: flex-start;
+				padding: 15px;
+			}
+		}
+		&_mobile{
+			display: none;
+			transform: scale(1.1);
+			@include sp{
+				display: flex;
+				align-items: center;
+			}
+			#close{
+				display: none;
+			}
+			&.js-active{
+				#open{
+					display: none;
+				}
+				#close{
+					display: block;
+				}
+			}
+		}
+
+	}
+}

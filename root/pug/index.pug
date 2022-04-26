@@ -1,0 +1,80 @@
+extends _layout/default
+
+block vars
+  -title        = 'Top'
+  -description  = ''
+  -keywords     = ''
+  -pageID       = 'top'
+  -path         = ''
+block before_page
+  link(rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css")
+block after_page
+  script(src="https://unpkg.com/swiper@8/swiper-bundle.min.js")
+  script.
+    const swiper = new Swiper(".swiper", {
+      // Optional parameters
+      direction: "horizontal",
+      loop: true,
+      effect: "fade",
+      fadeEffect: {
+        crossFade: true
+      },
+      speed: 400,
+
+      // If we need pagination
+      /*pagination: {
+        el: '.swiper-pagination',
+      },*/
+
+      // Navigation arrows
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev"
+      }
+
+      // And if we need scrollbar
+      /*scrollbar: {
+        el: '.swiper-scrollbar',
+      },*/
+    });
+
+block container
+  .swiper
+    // Additional required wrapper
+    .swiper-wrapper
+      // Slides
+      .swiper-slide
+        .swiper-image(style="background: url('https://www.specialized.com/medias/03-ROAD-3212-Hero-2800x1620.jpg?context=bWFzdGVyfGltYWdlc3w2OTkyMTN8aW1hZ2UvanBlZ3xpbWFnZXMvaGJhL2g5Yi85MTMxMDkzODUyMTkwLmpwZ3xjMDI3ZWM3OGVhMzZmMjY3NDcxYzg4OTQxNmM5YTFhMDU3OGY5MmQxOWRkMTcyMWQzZjYxNjFmMmI5NTdjOGU4') no-repeat right bottom; background-size:cover;")
+        .overlay
+        .content-wrapper
+          .content
+            h1 THE ULTIMATE GETAWAY VEHICLE
+            p
+              | With speed, control, and confidence on any terrain, Diverge is the most capable gravel bike ever made. Switching from Midwest gravel at Mach 5 to rutted single track with ease, nothing helps you escape faster than Diverge.
+            a.button(href='') Learn More
+      .swiper-slide
+        .swiper-image(style="background: url('https://www.specialized.com/medias/07-ROAD-3300-TarmacStory-Hero-Handling-2800x1620.jpg?context=bWFzdGVyfGltYWdlc3w3MTc5NDN8aW1hZ2UvanBlZ3xpbWFnZXMvaDBmL2g4Yi85MTc1MzM1NTAxODU0LmpwZ3w0MDc5MjI3Y2QyMGFkMjVmN2NjMzVkN2U1YzJkNmE3N2Y0YWQ0ODIxNjVkYjhjODg1OGFjMjUzNGQxYjQ3ZTg2') no-repeat center center; background-size:cover;")
+        .overlay
+        .content-wrapper.content-right
+          .content
+            h1 ONE BIKE TO RULE THEM ALL
+            p
+              | Morph Sagan’s superhuman speed with Alaphilippe’s climbing power and you’ve got the Tarmac SL7. The bike that knows no compromise. Climb on the lightest bike the rules allow, sprint on the fastest – all with legendary Tarmac handling. The only choice you need to make is when to attack.
+            a.button(href='') Learn More
+      .swiper-slide
+        .swiper-image(style="background: url('	https://www.specialized.com/medias/10-MTB-2197-EvoCarousel-2880x1620-01.jpg?context=bWFzdGVyfGltYWdlc3w5OTM3Mzd8aW1hZ2UvanBlZ3xpbWFnZXMvaGMxL2g4Zi85MTU2MTg5NDg3MTM0LmpwZ3w4OTBmZmI4OGNiNjYyNDNjOTA0MTJkYmUwNjhlOTE5MWZkOWMyMTNiMGYyMzZhMDM3YWVkOTA3ZmFmYmY0ZWRm') no-repeat right center; background-size:cover;")
+        .overlay
+        .content-wrapper
+          .content
+            h1 THINK FASTEST
+            p
+              | You’re looking at the fastest XC bikes in the world. Building on the legacy of the winningest full suspension XC bike in history, these freshly redesigned Epics deliver an unmatched combination of pedaling efficiency, light weight and control.
+            a.button(href='') Learn More
+    // If we need pagination
+    .swiper-pagination
+    // If we need navigation buttons
+    .swiper-nav-wrapper
+      .swiper-button-prev
+      .swiper-button-next
+    // If we need scrollbar
+    .swiper-scrollbar
