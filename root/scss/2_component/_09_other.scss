@@ -79,6 +79,10 @@
 		text-decoration: none;
 		color: #ededed;
 		font-size: 2rem;
+		@include sp{
+			padding: 10px 30px;
+			font-size: 1.5rem;
+		}
 	}
 }
 
