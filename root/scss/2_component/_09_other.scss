@@ -1,3 +1,70 @@
 /*------------------------------------------------------------
 	Other
 ------------------------------------------------------------*/
+.c-message{
+	@include flex-center;
+	margin: 3rem 0;
+	&_inner{
+		padding: 2rem 8%;
+		border-radius: 15px;
+		background-color: #1da1f2;
+		p{
+			font-size: 2.5rem;
+			line-height: 1.3;
+			text-align: center;
+			color: white;
+			@include sp{
+				font-size: 2rem;
+			}
+		}
+	}
+}
+.c-solution{
+	margin: 3rem 0;
+	&_inner{
+		h3{
+			width: 100%;
+			text-align: center;
+			font-size: 4rem;
+
+		}
+		ul{
+			@include flex-jbetween;
+			flex-wrap: wrap;
+			li{
+				width: 30%;
+				padding: 20px;
+				margin: 3rem 0;
+				background-color: #fff;
+				border: solid 1px #ededed;
+				@include sp{
+					width: 100%;
+					margin: 1.5rem 0;
+				}
+			}
+		}
+	}
+	&_tag{
+    margin: 0 0 5px 0;
+    font-size: 1rem;
+    font-weight: normal;
+    line-height: 1.43;
+    color: #282b3e;
+    padding-right: 20px;
+	}
+	&_name{
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: 4px;
+    color: #282b3e;
+	}
+	&_icon{
+		width: 70px;
+		height: 70px;
+		margin: 3rem 0;
+	}
+	&_extra{
+		font-size: 2.5rem;
+		font-weight: 400;
+	}
+}
