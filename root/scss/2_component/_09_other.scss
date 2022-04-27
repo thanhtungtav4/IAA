@@ -33,7 +33,7 @@
 			flex-wrap: wrap;
 			li{
 				width: 30%;
-				padding: 20px;
+				padding: 30px 20px;
 				margin: 3rem 0;
 				background-color: #fff;
 				border: solid 1px #ededed;
@@ -68,3 +68,68 @@
 		font-weight: 400;
 	}
 }
+.c-button{
+	@include flex-center;
+	text-align: center;
+	margin: 3rem 0;
+	&_inner{
+		background-color: #1da1f2;
+		padding: 10px 100px;
+		border-radius: 20px;
+		text-decoration: none;
+		color: #ededed;
+		font-size: 2rem;
+	}
+}
+
+@keyframes pulse_animation {
+	0% { transform: scale(1); }
+	30% { transform: scale(1); }
+	40% { transform: scale(1.07); }
+	50% { transform: scale(1); }
+	60% { transform: scale(1); }
+	70% { transform: scale(1.05); }
+	80% { transform: scale(1); }
+	100% { transform: scale(1); }
+}
+.bounceIn {
+  animation-name: bounceIn;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+	animation-iteration-count: infinite;
+	animation-delay: .5s;
+}
+
+@keyframes bounceIn {
+  0%, 20%, 40%, 60%, 80%, 100% {
+  -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+  0% {
+  opacity: 0;
+  -webkit-transform: scale3d(.3, .3, .3);
+  transform: scale3d(.3, .3, .3);
+  }
+  20% {
+  -webkit-transform: scale3d(1.1, 1.1, 1.1);
+  transform: scale3d(1.1, 1.1, 1.1);
+  }
+  40% {
+  -webkit-transform: scale3d(.9, .9, .9);
+  transform: scale3d(.9, .9, .9);
+  }
+  60% {
+  opacity: 1;
+  -webkit-transform: scale3d(1.03, 1.03, 1.03);
+  transform: scale3d(1.03, 1.03, 1.03);
+  }
+  80% {
+  -webkit-transform: scale3d(.97, .97, .97);
+  transform: scale3d(.97, .97, .97);
+  }
+  100% {
+  opacity: 1;
+  -webkit-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
+  }
+  }
