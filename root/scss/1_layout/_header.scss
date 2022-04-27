@@ -13,6 +13,9 @@
 	.l-container, .nav-menu{
 		@include flex-jbetween;
 		align-items: flex-end;
+		@include sp{
+			align-items: center;
+		}
 	}
 	.nav-menu{
 		transition: 0.3s ease-in-out;
@@ -29,7 +32,7 @@
 					color: #ee680f;
 				}
 			}
-			
+
 			&:hover{
 				a{
 					color: #ee680f;
@@ -43,8 +46,16 @@
 						content: 'Licensed in all 50 States';
 						display: block;
 						font-size: 60%;
+						line-height: 1.5;
 						font-weight: normal;
 						color: #333;
+					}
+				}
+				&.not-before{
+					a{
+						&::before{
+							content: '';
+						}
 					}
 				}
 			}
@@ -63,10 +74,10 @@
 				position: absolute;
 				left: 0;
 				z-index: 99;
-				background-color: $color-main;
+				background-color:white;
 				width: 100vw;
 				height: 100vh;
-				top: 73px;
+				top: 87px;
 				justify-content: flex-start;
 				padding: 15px;
 			}
