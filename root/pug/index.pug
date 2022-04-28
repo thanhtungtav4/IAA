@@ -146,6 +146,7 @@ block container
             iframe(src='https://www.youtube.com/embed/CXE5hkd0XLw' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')
           li
             iframe(src='https://www.youtube.com/embed/CXE5hkd0XLw' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')
+
     .c-user
       h3 Khách hàng nói gì về Công ty <br> Marketing Online TP. HCM - FIEX?
       .c-user_inner
@@ -167,3 +168,38 @@ block container
             p  To correctly display the controls based on the user role, we will add a condition to check if the connected user is a viewer or stage for these two buttons.
 
 
+    .c-contact 
+      ul 
+        li 
+          h3 Đăng ký dịch vụ Marketing 
+          p Sự Tận tâm và Kỹ lưỡng chính là hai yếu tố tiên quyết được đội ngũ của Jolie đặt vào trong từng hợp đồng, để mỗi khách hàng đều nắm được tường tận những quỹ tài chính mà đang làm chủ.
+        li
+          form(action='/signup' method='post')
+            p
+              label First name
+              br
+              input(type='text' name='first_name')
+            p
+              label Last name
+              br
+              input(type='text' name='last_name')
+            p
+              label Email
+              br
+              input(type='email' name='email' required='')
+            p
+              label Phone number
+              br
+              input(type='tel' name='phone')
+            p
+              label Password
+              br
+              input(type='password' name='password')
+            p
+              label
+                input(type='checkbox' value='terms')
+                |       I agree to the 
+                a(href='/terms') terms and conditions
+            p
+              button Sign up
+              button(type='reset') Reset form
