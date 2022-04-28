@@ -8,6 +8,9 @@
 		padding: 2rem 8%;
 		border-radius: 15px;
 		background-color: #1da1f2;
+		@include min(900px){
+			max-width: 80vw;
+		}
 		p{
 			font-size: 2.5rem;
 			line-height: 1.3;
@@ -97,7 +100,7 @@
 		flex-wrap: wrap;
 		margin: 4rem 0;
 		@include sp{
-			margin:  4rem -15px;
+			margin:  2rem -15px;
 		}
 		li{
 			width: 25%;
@@ -126,18 +129,91 @@
 .c-boss{
 	@include flex-center;
 	align-items: flex-start;
-	margin: 4rem auto;
-	max-width: 80vw;
+	margin: 4rem auto 2rem;
+	max-width: 900px;
+	width: 100%;
+	@include sp{
+		max-width: 100%;
+	}
 	&_img{
-		width: 50%;
+		width: 40%;
 		text-align: center;
 		img{
 			width: fit-content;
 		}
+		@include sp{
+			width: 100%;
+		}
 	}
 	&_content{
-		width: 50%;
-		padding: 5%;
+		width: 60%;
+		padding: 0 5%;
+		h3{
+			font-size: 2.5rem;
+			line-height: 1.5;
+			position: relative;
+
+			&::after{
+				width: 40px;
+				background-color: #1da1f2;
+				content: '';
+				height: 3px;
+				position: absolute;
+				left: 0;
+				bottom: 4px;
+			}
+		}
+		p{
+			font-size: 1.7rem;
+			line-height: 1.5;
+			font-weight: 400;
+		}
+		@include sp{
+			width: 100%;
+			padding-top: 5%;
+		}
+	}
+	ul{
+		margin: 3rem -15px;
+		@include flex-center;
+		@include sp{
+			margin: 1rem -15px;
+		}
+		li{
+			width: 25%;
+			padding: 15px;
+		}
+	}
+}
+.c-video{
+	margin: 1rem 0;
+	h3 {
+		@include ttl3;
+		margin-bottom: 3rem;
+	}
+	ul{
+		@include flex-center;
+		flex-wrap: wrap;
+		li{
+				width: 50%;
+				padding-top: 30%;
+				position: relative;
+				overflow: hidden;
+				@include sp{
+					width: 100%;
+					padding-top: 70%;
+				}
+				iframe{
+					position: absolute;
+					top: 0;
+					left: 0;
+					bottom: 0;
+					right: 0;
+					width: 90%;
+					height: 90%;
+					margin: 0 auto;
+				}
+		}
 	}
 }
 @keyframes pulse_animation {
