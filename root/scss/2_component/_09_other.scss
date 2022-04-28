@@ -216,6 +216,42 @@
 		}
 	}
 }
+.c-user{
+	margin: 3rem 0;
+	h3{
+		@include ttl3;
+	}
+	&_list{
+		@include flex-center;
+	}
+	&_item{
+		 width: 25%;
+		padding: 20px 30px;
+		text-align: center;
+		h4{
+			font-size: 2rem;
+			line-height: 1.5;
+			margin: 1rem 0;
+		}
+		p{
+			font-size: 1.5rem;
+			font-weight: 400;
+		}
+	}
+	&_img{
+		width: 200px;
+		height: auto;
+		margin: 0 auto;
+		img{
+			border-radius: 50%;
+		}
+	}
+	&_inner{
+		width: 100%;
+		max-width: 100%;
+		display: block;
+	}
+}
 @keyframes pulse_animation {
 	0% { transform: scale(1); }
 	30% { transform: scale(1); }
