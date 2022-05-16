@@ -32,11 +32,12 @@
 			@include flex-center;
 			flex-wrap: wrap;
 			li{
-				width: 28%;
+				width: calc(33.3% - 40px);
 				padding: 30px 20px;
-				margin: 3rem 2.5%;
+				margin: 3rem 20px;
 				background-color: #fff;
 				border: solid 1px #ededed;
+				align-self: stretch;
 				@include sp{
 					width: 100%;
 					margin: 1.5rem 0;
@@ -103,8 +104,11 @@
 			margin:  2rem -15px;
 		}
 		li{
-			width: 25%;
+			width: calc(25% - 30px);
 			margin: 15px;
+			display: flex;
+			flex-direction: column;
+			align-self: stretch;
 			@include sp{
 				width: 50%;
 				margin: 15px 0;
