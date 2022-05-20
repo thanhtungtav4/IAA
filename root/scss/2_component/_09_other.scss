@@ -211,6 +211,7 @@
 			@include flex-jbetween;
 			top: 32%;
 			bottom: 50%;
+			width: 100%;
 		}
 	}
 }
@@ -273,10 +274,17 @@
 	}
 	&_img{
 		width: 200px;
-		height: auto;
+		height: 200px;
 		margin: 0 auto;
+		position: relative;
 		img{
 			border-radius: 50%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
 		}
 	}
 	&_inner{
