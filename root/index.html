@@ -10,7 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
-    <!--link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js")-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
   </head>
   <body>
     <div class="container">
@@ -138,12 +139,20 @@
               <p>JOLIE PHAN, a life insurance associate of Independent Alliance Agency, had worked in the healthcare field for over a decade. Organized and joined many international mission trips including to Syrian refugee’s camp in 2017, Jolie’s passion has always been about serving others. Her attitude toward life insurance industry is no different. It is all about serving people and giving every American family a better life.</p>
               <p>With a substantial amount of knowledge in structuring a policy, backed by an excellent support team, Jolie is committed to help every family to have a comprehensive understanding of the benefits of tax free retirement</p>
             </div>
-            <ul>
-              <li><img class="lazyload" loading="lazy" data-src="https://api.lorem.space/image/fashion?w=300&amp;h=250" src="https://api.lorem.space/image/fashion?w=300&amp;h=250" alt=""></li>
-              <li><img class="lazyload" loading="lazy" data-src="https://api.lorem.space/image/fashion?w=300&amp;h=250" src="https://api.lorem.space/image/fashion?w=300&amp;h=250" alt=""></li>
-              <li><img class="lazyload" loading="lazy" data-src="https://api.lorem.space/image/fashion?w=300&amp;h=250" src="https://api.lorem.space/image/fashion?w=300&amp;h=250" alt=""></li>
-              <li><img class="lazyload" loading="lazy" data-src="https://api.lorem.space/image/fashion?w=300&amp;h=250" src="https://api.lorem.space/image/fashion?w=300&amp;h=250" alt=""></li>
-            </ul>
+            <div class="swiper-user">
+              <div class="owl-carousel owl-theme">
+                <div class="item"><img class="lazyload" loading="lazy" data-src="https://api.lorem.space/image/fashion?w=300&amp;h=250" src="https://api.lorem.space/image/fashion?w=300&amp;h=250" alt=""></div>
+                <div class="item"><img class="lazyload" loading="lazy" data-src="https://api.lorem.space/image/fashion?w=300&amp;h=250" src="https://api.lorem.space/image/fashion?w=300&amp;h=250" alt=""></div>
+                <div class="item"><img class="lazyload" loading="lazy" data-src="https://api.lorem.space/image/fashion?w=300&amp;h=250" src="https://api.lorem.space/image/fashion?w=300&amp;h=250" alt=""></div>
+                <div class="item"><img class="lazyload" loading="lazy" data-src="https://api.lorem.space/image/fashion?w=300&amp;h=250" src="https://api.lorem.space/image/fashion?w=300&amp;h=250" alt=""></div>
+                <div class="item"><img class="lazyload" loading="lazy" data-src="https://api.lorem.space/image/fashion?w=300&amp;h=250" src="https://api.lorem.space/image/fashion?w=300&amp;h=250" alt=""></div>
+                <div class="item"><img class="lazyload" loading="lazy" data-src="https://api.lorem.space/image/fashion?w=300&amp;h=250" src="https://api.lorem.space/image/fashion?w=300&amp;h=250" alt=""></div>
+                <div class="item"><img class="lazyload" loading="lazy" data-src="https://api.lorem.space/image/fashion?w=300&amp;h=250" src="https://api.lorem.space/image/fashion?w=300&amp;h=250" alt=""></div>
+                <div class="item"><img class="lazyload" loading="lazy" data-src="https://api.lorem.space/image/fashion?w=300&amp;h=250" src="https://api.lorem.space/image/fashion?w=300&amp;h=250" alt=""></div>
+              </div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
           </div>
           <div class="c-video">
             <h3>Khách hàng nói gì về Công ty <br> Marketing Online TP. HCM - FIEX?</h3>
@@ -200,7 +209,7 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="assets/js/common.js"></script>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-    <!--script(src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer")-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script>
       const swiper = new Swiper(".swiper", {
         direction: "horizontal",
@@ -214,6 +223,19 @@
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev"
         }
+      });
+      $('.owl-carousel').owlCarousel({
+      loop:true,
+      margin: 20,
+      nav: false,
+      responsive:{
+          0:{
+              items:2
+          },
+          768:{
+              items:4
+          }
+      }
       });
     </script>
   </body>
