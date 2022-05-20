@@ -191,18 +191,26 @@
 	.swiper-user{
 		width: 100%;
 		max-width: 100vw;
+		position: relative;
 		@include sp{
 			max-width: 90vw;
 		}
 		margin: 3rem 0;
 		.owl-theme {
 			@include flex-center;
+			position: relative;
 			overflow: hidden;
 			.item{
 				img{
 					object-fit: cover;
 				}
 			}
+		}
+		.owl-nav{
+			position: absolute;
+			@include flex-jbetween;
+			top: 32%;
+			bottom: 50%;
 		}
 	}
 }
