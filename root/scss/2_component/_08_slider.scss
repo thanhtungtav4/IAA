@@ -5,6 +5,12 @@
 	.swiper {
 		width: 98vw;
 		height: 90vh;
+		h1{
+			margin-bottom: 2rem;
+			@include sp{
+				font-size: 4rem;
+			}
+		}
 		.overlay {
 			width: 100vw;
 			height: 100vh;
@@ -94,6 +100,7 @@
 			background-color:#f6511d;
 			width: fit-content;
 			color: #fff;
+			margin-top: 3rem;
 		}
 	}
 	.swiper-button-next {
@@ -150,7 +157,7 @@
 					padding: 0 20px;
 					margin: 0 3rem !important;
 					h1{
-						font-size: 2rem;
+						font-size: 5rem;
 					}
 					p{
 						font-size: 1.5rem;

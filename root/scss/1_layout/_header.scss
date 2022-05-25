@@ -53,8 +53,14 @@
 				}
 				&.not-before{
 					a{
+						color: white;
+						background-color: #ee680f;
+						border-radius: 15px;
+						padding: 10px 20px;
+						display: flex;
 						&::before{
 							content: '';
+							display: none;
 						}
 					}
 				}

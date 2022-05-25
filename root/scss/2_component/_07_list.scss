@@ -1,3 +1,14 @@
 /*------------------------------------------------------------
 	List
 ------------------------------------------------------------*/
+.swiper-user .owl-dot, .c-user .owl-dot{
+	margin-top: 1rem;
+	span{
+		background: #ee680f7e !important;
+	}
+	&.active{
+		span{
+			background: #fb6b0b !important;
+		}
+	}
+}
