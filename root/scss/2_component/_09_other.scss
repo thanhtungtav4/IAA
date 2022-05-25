@@ -4,6 +4,9 @@
 .c-message{
 	@include flex-center;
 	margin: 5rem 0;
+	@include sp{
+		margin: 3rem 10%;
+	}
 	&_inner{
 		padding: 2rem 8%;
 		border-radius: 15px;
