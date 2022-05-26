@@ -90,9 +90,13 @@ block container
         .swiper-button-next
       .swiper-scrollbar
   .l-container
-    .c-message
-      .c-message_inner
-        p WE MAKE MONEY <br> WORK IN YOUR FAVOR   
+    .c-boss
+      .c-boss_img
+        img.lazyload(loading="lazy", data-src=path+"assets/images/user02.jpg", src=path+"assets/images/user02.jpg" alt="")
+      .c-boss_content
+        h3.m-center.m-position Our Mission
+        p There's this notion that to grow a business, you have to be ruthless. But we know there's a better way to grow. One where what's good for the bottom line is also good for customers. We believe businesses can grow with a conscience, and succeed with a soul — and that they can do it with inbound. That's why we've created an ecosystem uniting software, education, and community to help businesses grow better every day. 
+
   .c-solution
     .l-container
       .c-solution_inner
@@ -125,32 +129,63 @@ block container
     a.c-button_inner.bounceIn(href="https://api.leadconnectorhq.com/widget/appointment/preciouslifeagent/retirement-consultation", target="_blank")
         p Bạn có muốn làm chủ tương lai?
         p Đừng ngần ngại tìm hiểu cùng Jolie!
-  .l-container      
-    .c-trust
-        h3 There are 1000+ customers who have chosen to accompany Jolie, because:
-        p  Put customers first, choose the types of insurance and financial funds that fit your budget and help you achieve maximum benefits in the future.
-        ul
-         li
-          .c-trust_icon
+   
+  .c-customers
+    .l-container 
+      .c-customers_inner
+        dl 
+          dd 
+            h3 There are 1000+ customers who have chosen to accompany Jolie, because:
+            p  Put customers first, choose the types of insurance and financial funds that fit your budget and help you achieve maximum benefits in the future.  
+        dl 
+          dd 
+            img.lazyload(loading="lazy", data-src=path+"assets/images/user02.jpg", src=path+"assets/images/user02.jpg" alt="")
+      ul.c-customers_list
+        li   
+          .c-customers_ttl  
             img.lazyload(loading="lazy", data-src=path+"assets/images/shield.png" src=path+"assets/images/shield.png")
-          h3 Trusted Partners
+            h3 Trusted Partners
           p Jolie's agent and team contract with many reputable financial companies in the market to bring you the best products
-         li
-          .c-trust_icon
+        li
+          .c-customers_ttl  
             img.lazyload(loading="lazy", data-src=path+"assets/images/customer-service.png" src=path+"assets/images/customer-service.png")
-          h3 #1 Customer Service
+            h3 #1 Customer Service
           p Jolie has always had the ideal of giving and serving, so Jolie always strives to bring satisfaction and the best experience to customers from the first time they meet.
-         li
-          .c-trust_icon
+        li
+          .c-customers_ttl  
             img.lazyload(loading="lazy", data-src=path+"assets/images/badge.png" src=path+"assets/images/badge.png")
-          h3 Professional
+            h3 Professional
           p Professional process and a team of rich professionals are always ready to advise and support customers on any insurance-related issues.
-         li
-          .c-trust_icon
+        li
+          .c-customers_ttl  
             img.lazyload(loading="lazy", data-src=path+"assets/images/best-seller.png" src=path+"assets/images/best-seller.png")
-          h3 Best Offer
-          p Thoroughly learn about the wishes and capabilities of the customer to come up with the most suitable and optimal financial fund for the customer's needs.
-            | To enable screen reader support, press Ctrl+Alt+Z To learn about keyboard shortcuts, press Ctrl+slash
+            h3 Best Offer
+          p Thoroughly learn about the wishes and capabilities of the customer to come up with the most suitable and optimal financial fund for the customer's needs. To enable screen reader support, press Ctrl+Alt+Z To learn about keyboard shortcuts, press Ctrl+slash  
+  //- .c-trust
+    //-     h3 There are 1000+ customers who have chosen to accompany Jolie, because:
+    //-     p  Put customers first, choose the types of insurance and financial funds that fit your budget and help you achieve maximum benefits in the future.
+    //-     ul
+    //-      li
+    //-       .c-trust_icon
+    //-         img.lazyload(loading="lazy", data-src=path+"assets/images/shield.png" src=path+"assets/images/shield.png")
+    //-       h3 Trusted Partners
+    //-       p Jolie's agent and team contract with many reputable financial companies in the market to bring you the best products
+    //-      li
+    //-       .c-trust_icon
+    //-         img.lazyload(loading="lazy", data-src=path+"assets/images/customer-service.png" src=path+"assets/images/customer-service.png")
+    //-       h3 #1 Customer Service
+    //-       p Jolie has always had the ideal of giving and serving, so Jolie always strives to bring satisfaction and the best experience to customers from the first time they meet.
+    //-      li
+    //-       .c-trust_icon
+    //-         img.lazyload(loading="lazy", data-src=path+"assets/images/badge.png" src=path+"assets/images/badge.png")
+    //-       h3 Professional
+    //-       p Professional process and a team of rich professionals are always ready to advise and support customers on any insurance-related issues.
+    //-      li
+    //-       .c-trust_icon
+    //-         img.lazyload(loading="lazy", data-src=path+"assets/images/best-seller.png" src=path+"assets/images/best-seller.png")
+    //-       h3 Best Offer
+    //-       p Thoroughly learn about the wishes and capabilities of the customer to come up with the most suitable and optimal financial fund for the customer's needs.
+    //-         | To enable screen reader support, press Ctrl+Alt+Z To learn about keyboard shortcuts, press Ctrl+slash
     .c-boss
       .c-boss_img
         img.lazyload(loading="lazy", data-src=path+"assets/images/jolie-phan0.jpg", src=path+"assets/images/jolie-phan0.jpg" alt="")
@@ -192,7 +227,7 @@ block container
         .c-user_item
           .c-user_img
               img.lazyload(loading="lazy", data-src=path+"assets/images/dr-terry-truong.jpg" src=path+"assets/images/dr-terry-truong.jpg", alt="")
-          h4 DR Terry Trương
+          h4 Dr. Terry Truong
           p  Thanks to my aunt's introduction, I got to know Jolie and was supported by her retirement insurance. I am very satisfied with Jolie's service.
         .c-user_item
           .c-user_img
@@ -207,7 +242,7 @@ block container
         .c-user_item
           .c-user_img
               img.lazyload(loading="lazy", data-src=path+"assets/images/dr-terry-truong.jpg" src=path+"assets/images/dr-terry-truong.jpg", alt="")
-          h4 DR Terry Trương
+          h4 Dr. Terry Truong
           p  Thanks to my aunt's introduction, I got to know Jolie and was supported by her retirement insurance. I am very satisfied with Jolie's service.
         .c-user_item
           .c-user_img
@@ -218,8 +253,10 @@ block container
         ul
           li
             iframe.lazyload( loading="lazy" src='https://www.youtube.com/embed/Sp7MkwNVWPE' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')
+            p Trinh Nguyen -  Math Teacher at Fort Bend County
           li
             iframe.lazyload( loading="lazy" src='https://www.youtube.com/embed/flGKab64l9M' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')
+            p Dr. Hieu Do - Dentist Owner at Total Wellness Dental
   .c-quoue
       .l-container
         h3 Contact us for professional financial advice
