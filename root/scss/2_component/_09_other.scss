@@ -398,6 +398,8 @@
 	&_inner{
 		@include flex-jbetween;
 		flex-wrap: wrap;
+		max-width: 1200px;
+		margin: 0 auto;
 		dl{
 			width: calc(50% - 20px);
 			margin: 2rem 10px;
@@ -424,11 +426,12 @@
 	&_list{
 		@include flex-jbetween;
 		flex-wrap: wrap;
+		margin-top: -10rem;
 		li{
 			width: calc(25% - 50px);
 			margin: 0 25px;
 			@include sp{
-				width: calc(50% - 10px);
+				width: calc(100% - 10px);
 				margin: 10px 5px;
 			}
 			padding: 40px 30px 20px;
